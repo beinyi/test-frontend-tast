@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <Container @on-item-click="toggleProduct" :items="basket" />
     <Container @on-item-click="toggleProduct" :items="showcase" />
   </div>
@@ -15,5 +15,3 @@ const { toggleProduct, basket, showcase } = useBasket({
   limit: 6,
 });
 </script>
-
-<style scoped></style>

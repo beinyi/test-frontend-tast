@@ -1,11 +1,13 @@
 <template>
-  <Item
-    v-for="({ id, name }, i) in props.items"
-    :key="i"
-    :title="name"
-    :id="id"
-    @click="() => handleClick(id)"
-  />
+  <div class="container">
+    <Item
+      v-for="({ id, name }, i) in props.items"
+      :key="i"
+      :title="name"
+      :id="id"
+      @click="() => handleClick(id)"
+    />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -24,4 +26,12 @@ function handleClick(id: number) {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.container {
+  border: 2px solid white;
+  display: flex;
+  max-width: 256px;
+  min-height: 128px;
+  flex-flow: row wrap;
+}
+</style>

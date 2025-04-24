@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <Container @on-item-click="toggleProduct" :items="basket" />
     <Container @on-item-click="toggleProduct" :items="showcase" />
   </div>

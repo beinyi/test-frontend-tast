@@ -4,8 +4,17 @@ import Right from "./components/Right.vue";
 </script>
 
 <template>
-  <Left />
-  <Right />
+  <main>
+    <Left />
+    <Right />
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+</style>
