@@ -18,7 +18,6 @@ export function useBasket({ products, limit }: BasketOptions) {
   const basketSize = computed(() => basketMap.size);
 
   function toggleProduct(id: number) {
-    console.log(id);
     if (showcaseMap.has(id) && basketSize.value < limit) {
       const product = showcaseMap.get(id)!;
       showcaseMap.delete(id);
