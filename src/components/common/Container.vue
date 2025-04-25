@@ -34,4 +34,10 @@ function handleClick(id: number) {
   min-height: 128px;
   flex-flow: row wrap;
 }
+
+@media (prefers-color-scheme: light) {
+  .container {
+    border: 2px solid #213547;
+  }
+}
 </style>

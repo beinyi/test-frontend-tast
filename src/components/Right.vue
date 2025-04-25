@@ -7,11 +7,11 @@
 
 <script setup lang="ts">
 import { useBasket } from "../hooks/useBasket";
-import { leftItems } from "../store/store";
+import { rightItems } from "../store/store";
 import Container from "./common/Container.vue";
 
 const { toggleProduct, basket, showcase } = useBasket({
-  products: leftItems,
+  products: rightItems,
   limit: 1,
 });
 </script>
